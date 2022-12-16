@@ -4,12 +4,22 @@ import "./App.css";
 function App() {
   const { count, increment } = useCounter();
 
+  const throwError = () => {
+    throw new Error("Error thrown from App component");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={increment}>
+          <button
+            type="button"
+            onClick={() => {
+              increment();
+              throwError();
+            }}
+          >
             count is: {count}
           </button>
         </p>
