@@ -1,6 +1,6 @@
 # vitest-event-handler-errors
 
-Demonstration of the issue described in (link).
+Demonstration of the issue described in https://github.com/vitest-dev/vitest/discussions/2520.
 
 ## Problem
 
