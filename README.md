@@ -76,7 +76,7 @@ Error: Uncaught [Error: Error thrown from App component]
 
 ## Solutions tried
 
-1. Use [`jsdom`'s `VirtualConsole`](https://github.com/jsdom/jsdom#virtual-consoles) to capture errors and fail the test. This does not work; see comments in [vite.config.js](vite.config.js) for details.
+1. Use [`jsdom`'s `VirtualConsole`](https://github.com/jsdom/jsdom#virtual-consoles) to capture errors and fail the test. This does not work; see comments in [vite.config.ts](vite.config.ts) for details.
 2. Override `console.error` in a setup file. **This works**, but produces output that is verbose missing the relevant stack trace. See comments in [setup.ts](src/test/setup.ts) for details.
 
 ## Usage
